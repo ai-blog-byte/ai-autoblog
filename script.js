@@ -1,5 +1,5 @@
-const CLIENT_ID = 'YOUR_CLIENT_ID_HERE';
-const API_KEY = 'YOUR_API_KEY_HERE';
+const CLIENT_ID = '402998571031-s4k2gveke2mp0hslthurgs6l7b8cuv40.apps.googleusercontent.com';
+const API_KEY = 'AIzaSyCM76TqzvOuCJv50UpFq954I1j-mHld6BY';
 const SCOPES = 'https://www.googleapis.com/auth/blogger';
 
 let accessToken = '';
@@ -310,4 +310,5 @@ window.onload = () => {
     script.src = 'https://apis.google.com/js/api.js';
     script.onload = initClient;
     document.head.appendChild(script);
+
 };
