@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #f0f2f5 0%, #e6e9f0 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: direction 0.3s ease;
+}
+
+.container {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    direction: rtl;
+    border-left: 8px solid #4a6fa5;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "AI";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgba(74, 111, 165, 0.08);
+    font-family: 'Courier New', monospace;
+    pointer-events: none;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.lang-btn {
+    background: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.lang-btn:hover {
+    background: #3a5a8a;
+}
+
+h1 {
+    font-family: 'Courier New', monospace;
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+h1::after {
+    content: " · AutoBlog";
+    font-size: 18px;
+    color: #7f8c8d;
+    font-weight: normal;
+    display: block;
+    margin-top: -5px;
+}
+
+input, button, label {
+    width: 100%;
+    padding: 14px;
+    margin: 14px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    direction: ltr;
+}
+
+label {
+    text-align: left;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+button {
+    background: #4a6fa5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px;
+    margin-top: 25px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(74, 111, 165, 0.2);
+}
+
+button:hover {
+    background: #3a5a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(74, 111, 165, 0.3);
+}
+
+.status {
+    margin: 20px 0;
+    color: #666;
+    font-style: italic;
+}
+
+body.en {
+    direction: ltr;
+}
+
+body.en .container {
+    text-align: left;
+    border-left: 8px solid #4a6fa5;
+}
+
+body.en .lang-switch {
+    right: auto;
+    left: 20px;
+}
+
+body.en h1, body.en .status, body.en .lang-btn {
+    direction: ltr;
+}
