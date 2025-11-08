@@ -1,5 +1,5 @@
-const CLIENT_ID = '402998571031-s4k2gveke2mp0hslthurgs6l7b8cuv40.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyCM76TqzvOuCJv50UpFq954I1j-mHld6BY';
+const CLIENT_ID = '';
+const API_KEY = '';
 const SCOPES = 'https://www.googleapis.com/auth/blogger';
 
 let accessToken = '';
@@ -312,3 +312,4 @@ window.onload = () => {
     document.head.appendChild(script);
 
 };
+
